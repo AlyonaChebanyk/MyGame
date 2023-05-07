@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_game2_land"
+    tools:context=".ui.game2.Game2Fragment">
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/back_arrow_wtite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="140dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/balance_panel_game2"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        style="@style/TextViewBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="Balance"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+    <TextView
+        android:id="@+id/balanceTextView"
+        style="@style/TextViewBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="140dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/balance_panel_game2"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/balanceTextView"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/textView6"
+        style="@style/TextViewBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Win"
+        android:layout_marginTop="27dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView10"
+        app:layout_constraintStart_toStartOf="@+id/imageView10"
+        app:layout_constraintTop_toTopOf="@+id/imageView10" />
+
+    <TextView
+        android:id="@+id/winTextView"
+        style="@style/TextViewBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="115dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="-5dp"
+        android:src="@drawable/character_game2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="440dp"
+        android:layout_height="290dp"
+        android:src="@drawable/baraban_game2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/slot1RecyclerView"
+        android:layout_width="95dp"
+        android:layout_height="240dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        tools:listitem="@layout/slot_item_land"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="35dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/slot2RecyclerView"
+        android:layout_width="95dp"
+        android:layout_height="240dp"
+        app:layout_constraintStart_toEndOf="@+id/slot1RecyclerView"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        tools:listitem="@layout/slot_item_land"
+        android:layout_marginTop="35dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/slot3RecyclerView"
+        android:layout_width="95dp"
+        android:layout_height="240dp"
+        app:layout_constraintStart_toEndOf="@+id/slot2RecyclerView"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        tools:listitem="@layout/slot_item_land"
+        android:layout_marginTop="35dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/slot4RecyclerView"
+        android:layout_width="95dp"
+        android:layout_height="240dp"
+        app:layout_constraintStart_toEndOf="@+id/slot3RecyclerView"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        tools:listitem="@layout/slot_item_land"
+        android:layout_marginTop="35dp"/>
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="120dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/bit_panel_game2_land"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/bidTextView"
+        style="@style/TextViewBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+        app:layout_constraintEnd_toEndOf="@+id/imageView9"
+        app:layout_constraintStart_toStartOf="@+id/imageView9"
+        app:layout_constraintTop_toTopOf="@+id/imageView9" />
+
+    <ImageButton
+        android:id="@+id/plusButtonImageButton"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="25dp"
+        android:background="@drawable/plus_icon_game1"
+        app:layout_constraintEnd_toEndOf="@+id/imageView9"
+        app:layout_constraintStart_toStartOf="@+id/imageView9"
+        app:layout_constraintTop_toTopOf="@+id/imageView9" />
+
+    <View
+        android:id="@+id/plusButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/plusButtonImageButton"
+        app:layout_constraintEnd_toEndOf="@+id/plusButtonImageButton"
+        app:layout_constraintStart_toStartOf="@+id/plusButtonImageButton"
+        app:layout_constraintTop_toTopOf="@+id/plusButtonImageButton" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="60dp"
+        android:layout_height="1dp"
+        android:background="@color/orange"
+        app:layout_constraintBottom_toTopOf="@+id/bidTextView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView9"
+        app:layout_constraintStart_toStartOf="@+id/imageView9"
+        app:layout_constraintTop_toBottomOf="@+id/plusButtonImageButton" />
+
+    <View
+        android:layout_width="60dp"
+        android:layout_height="1dp"
+        android:background="@color/orange"
+        app:layout_constraintBottom_toTopOf="@+id/minusButtonImageButton"
+        app:layout_constraintEnd_toEndOf="@+id/imageView9"
+        app:layout_constraintStart_toStartOf="@+id/imageView9"
+        app:layout_constraintTop_toBottomOf="@+id/bidTextView"
+        android:layout_marginBottom="10dp"/>
+
+
+
+    <ImageButton
+        android:id="@+id/minusButtonImageButton"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/minus_icon_game1"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+        app:layout_constraintEnd_toEndOf="@+id/imageView9"
+        app:layout_constraintStart_toStartOf="@+id/imageView9" />
+    <View
+        android:id="@+id/minusButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@id/imageView9"
+        app:layout_constraintEnd_toEndOf="@+id/minusButtonImageButton"
+        app:layout_constraintStart_toStartOf="@+id/minusButtonImageButton"
+        app:layout_constraintTop_toBottomOf="@+id/bidTextView" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/playButton"
+        style="@style/SingUpButtonStyle"
+        android:layout_width="140dp"
+        android:layout_height="80dp"
+        android:fontFamily="@font/montserrat_alternates_medium"
+        android:text="Play"
+        android:textSize="24sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView9"
+        app:layout_constraintStart_toStartOf="@+id/imageView9"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        android:layout_marginTop="15dp"
+        app:backgroundTint="@null"
+        android:background="@drawable/background_gradient_without_border"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

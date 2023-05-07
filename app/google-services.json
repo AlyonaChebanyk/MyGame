@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "284453237978",
+    "project_id": "my-game-bf8a7",
+    "storage_bucket": "my-game-bf8a7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:284453237978:android:00e3a9e081b0d8fb0861e3",
+        "android_client_info": {
+          "package_name": "com.example.mygame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "284453237978-2r60pq6dcrd97pkhvcb20muhhefja3lp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVtlV2gWewepX6bQIz3Oqg2CaDsgwa9BY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "284453237978-2r60pq6dcrd97pkhvcb20muhhefja3lp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
